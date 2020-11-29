@@ -231,7 +231,7 @@ public class Calculator extends JFrame implements ActionListener, KeyListener{
 				result = x * y;
 				break;
 			case '^':
-				result = x * x;
+				result = (float) Math.pow(x, 2);
 				System.out.println(result);
 				break;
 			default : 
@@ -401,7 +401,6 @@ public class Calculator extends JFrame implements ActionListener, KeyListener{
 	public void sqrHandler() {
 		setX();
 		operator='^';
-		calc();
 		out.setText(text);
 	}
 
